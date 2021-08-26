@@ -1,5 +1,12 @@
-#id{
+#sBgColor{
+  background-color: skyblue;
+}
+#date{
   font-family: HambleRegularDemo-K70LZimport;
+  font-size: 45px;
+
+  background-color: tan;
+  
 }
 
 #textCust{
@@ -55,12 +62,7 @@
     text-align: center;
     word-break: break-all;
   }
-  
-  /* Provide sufficient contrast against white background */
-  a {
-    color: yellow;
-  }
-  
+
   .btn-primary {
     color: yellow;
     background-color: #1b6ec2;

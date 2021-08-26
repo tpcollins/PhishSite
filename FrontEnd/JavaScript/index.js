@@ -5,13 +5,16 @@ function handleShowDate(){
         return response.json();
     }).then(function(json){
         console.log(json);
-        console.log(json)
         var dateUrl = json[0].year;
-        var html = "<div id=\"date\">" + dateUrl;
+        var html = "<div id=\"date\">";
         json.forEach(dateUrl => {
-            html += " ";
-            html += dateUrl.year;
+
+            /*Logo.png is a place holder. Needs to be changed
+            once database for songs is made */
+            
+            html += "<p><a href=\"./Logo.png\">" + dateUrl.year + "</a>";
         });
+        html += "</p>";
         html += "</div>";
         document.getElementById("date").innerHTML = html;
     }).catch(function(error){
